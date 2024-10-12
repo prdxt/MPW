@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Medycyna Pola Walki</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Główne kolory */
+        :root {
+            --main-yellow: #f9e79f;  /* Pastelowy żółty */
+            --main-yellow-dark: #f7dc6f;
+            --main-bg-color: #fef9e7; /* Jaśniejsze tło */
+            --text-color: #333; /* Ciemny tekst dla lepszej czytelności */
+            --text-color-muted: #666; /* Dodatkowy tekst muted */
+            --primary-btn-color: #f9e79f; /* Żółty kolor dla przycisków */
+            --primary-btn-hover: #f7dc6f; /* Ciemniejszy żółty przy hoverze */
+            --secondary-btn-color: #333; /* Ciemny przycisk pomocniczy */
+            --secondary-btn-hover: #555;
+            --footer-bg-color: #f7dc6f; /* Tło stopki */
+        }
+
+        /* Nawigacja */
+        .navbar {
+            background-color: var(--main-yellow) !important;
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .nav-link {
+            color: var(--text-color) !important;  /* Ciemny tekst */
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: var(--text-color-muted) !important;  /* Lżejszy odcień na hover */
+        }
+
+        /* Główna treść */
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        p, li {
+            color: var(--text-color-muted);
+        }
+
+        /* Przyciski */
+        .btn-primary {
+            background-color: var(--primary-btn-color);
+            border-color: var(--primary-btn-color);
+            color: var(--text-color);  /* Ciemny tekst */
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-btn-hover);
+            border-color: var(--primary-btn-hover);
+            color: var(--text-color);  /* Tekst pozostaje ciemny na hover */
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Medycyna Pola Walki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="podstawowe-zasady.html">Podstawowe zasady</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="triage.html">Ocena pacjenta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="leczenie-ran.html">Leczenie ran</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaawansowane-techniki.html">Zaawansowane techniki</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sprzet-medyczny.html">Sprzęt medyczny</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="o-nas.html">O nas</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="mb-4">O nas</h1>
+    <p>===</p>
+    
+    <h2>Kontakt</h2>
+    <p>Chcesz do nas dołączyć? <a href="https://discord.gg/PhQtnQAxaw">discord!</a></p>
+</div>
+
+<hr>
+
+<footer class="text-muted text-center">
+    <p>&copy; 2024 Projekt Wschód. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

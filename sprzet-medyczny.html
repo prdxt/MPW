@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprzęt medyczny - Medycyna Pola Walki</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Główne kolory */
+        :root {
+            --main-yellow: #f9e79f;  /* Pastelowy żółty */
+            --main-yellow-dark: #f7dc6f;
+            --main-bg-color: #fef9e7; /* Jaśniejsze tło */
+            --text-color: #333; /* Ciemny tekst dla lepszej czytelności */
+            --text-color-muted: #666; /* Dodatkowy tekst muted */
+            --primary-btn-color: #f9e79f; /* Żółty kolor dla przycisków */
+            --primary-btn-hover: #f7dc6f; /* Ciemniejszy żółty przy hoverze */
+            --secondary-btn-color: #333; /* Ciemny przycisk pomocniczy */
+            --secondary-btn-hover: #555;
+            --footer-bg-color: #f7dc6f; /* Tło stopki */
+        }
+
+        /* Nawigacja */
+        .navbar {
+            background-color: var(--main-yellow) !important;
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .nav-link {
+            color: var(--text-color) !important;  /* Ciemny tekst */
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: var(--text-color-muted) !important;  /* Lżejszy odcień na hover */
+        }
+
+        /* Główna treść */
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        p, li {
+            color: var(--text-color-muted);
+        }
+
+        /* Przyciski */
+        .btn-primary {
+            background-color: var(--primary-btn-color);
+            border-color: var(--primary-btn-color);
+            color: var(--text-color);  /* Ciemny tekst */
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-btn-hover);
+            border-color: var(--primary-btn-hover);
+            color: var(--text-color);  /* Tekst pozostaje ciemny na hover */
+        }
+
+        /* Stopka */
+    
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Medycyna Pola Walki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="podstawowe-zasady.html">Podstawowe zasady</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="triage.html">Ocena pacjenta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="leczenie-ran.html">Leczenie ran</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaawansowane-techniki.html">Zaawansowane techniki</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="sprzet-medyczny.html">Sprzęt medyczny</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="o-nas.html">O nas</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="mb-4">Sprzęt medyczny</h1>
+    <p>W naszej jednostce dostępny jest szeroki wachlarz sprzętu medycznego, który odgrywa kluczową rolę w ratowaniu życia na polu walki. Poniżej przedstawiamy szczegółowy opis każdego elementu dostępnego w ekwipunku.</p>
+
+    <h2>1. Środki przeciwbólowe</h2>
+    <p>Podstawowe leki do zmniejszania bólu u rannych żołnierzy. Zmniejszają cierpienie pacjenta, ale ich nadmierne stosowanie może mieć negatywne konsekwencje.</p>
+
+    <h2>2. Apteczka osobista</h2>
+    <p>Apteczka, którą może nosić każdy żołnierz. Zawiera podstawowy sprzęt medyczny, taki jak bandaże i leki. Używana głównie do leczenia lekkich ran i stabilizacji pacjenta przed dostarczeniem go do medyka.</p>
+
+    <h2>3. Autostrzykawka EpiPen</h2>
+    <p>Autostrzykawka zawierająca epinefrynę, stosowaną do przywracania akcji serca i pobudzania pacjentów po utracie przytomności.</p>
+
+    <h2>4. Autostrzykawka z adrenozyną</h2>
+    <p>Lek stosowany do obniżenia tętna, gdy pacjent ma niebezpiecznie wysokie tętno.</p>
+
+    <h2>5. Autostrzykawka z morfiną</h2>
+    <p>Morfinę stosuje się do zmniejszenia bólu pacjenta. Należy ją podawać ostrożnie, ponieważ zbyt duża dawka może spowodować zatrzymanie akcji serca.</p>
+
+    <h2>6. Bandaże</h2>
+    <ul>
+        <li><strong>Bandaż elastyczny</strong> – najlepszy do szybkiego zamknięcia ran, ale może się łatwo otworzyć ponownie. Stosowany głównie w lekkich obrażeniach.</li>
+        <li><strong>Bandaż jałowy</strong> – podstawowy bandaż do opatrzenia ran. Jest mniej skuteczny, ale nadal przydatny w przypadku braku lepszego sprzętu.</li>
+        <li><strong>Bandaż uciskowy</strong> – stosowany do kontrolowania krwotoków z większych ran. Bardzo skuteczny, ale jego założenie zajmuje więcej czasu.</li>
+    </ul>
+
+    <h2>7. Płyny IV</h2>
+    <p>Różne rodzaje płynów stosowane do nawodnienia pacjentów i stabilizacji ich ciśnienia krwi:</p>
+    <ul>
+        <li><strong>Krew IV</strong> – najważniejszy płyn do przywracania objętości krwi po dużych krwotokach. Dostępne w opakowaniach 250 ml, 500 ml i 1000 ml.</li>
+        <li><strong>Osocze IV</strong> – alternatywa dla krwi, pomaga w stabilizacji pacjentów z mniejszymi obrażeniami. Dostępne w różnych pojemnościach.</li>
+        <li><strong>Sól fizjologiczna IV</strong> – stosowana do nawodnienia i stabilizacji pacjentów, szczególnie w sytuacjach, gdy krew nie jest dostępna.</li>
+    </ul>
+
+    <h2>8. Opatrunek QuickClot ACS</h2>
+    <p>Opatrunek zawierający substancję hamującą krwawienie. Szybko tamuje krwotok, ale nie jest idealny do długotrwałego leczenia. Najlepszy do zastosowania w nagłych przypadkach.</p>
+
+    <h2>9. Staza taktyczna (CAT)</h2>
+    <p>Staza używana do zatamowania poważnych krwotoków kończynowych. Używana w sytuacjach, gdy zwykłe bandaże nie są w stanie zatamować krwawienia. Niezbędna do utrzymania pacjenta przy życiu przed dostarczeniem go do bardziej zaawansowanej opieki medycznej.</p>
+
+    <h2>10. Szew</h2>
+    <p>Używany do zamykania głębokich ran. Szwy są konieczne do zabezpieczenia ran, które mogą się łatwo otworzyć po bandażowaniu.</p>
+
+    <h2>11. Szyna</h2>
+    <p>Szyna jest stosowana do unieruchamiania złamanych kończyn. Jej założenie zapobiega dalszym uszkodzeniom i pomaga w stabilizacji pacjenta do czasu transportu do szpitala.</p>
+
+    <h2>12. Worek na zwłoki</h2>
+    <p>Stosowany do transportu zmarłych żołnierzy. Występuje w trzech kolorach (biały, czarny, niebieski), co może być użyteczne do oznaczania zwłok na polu walki.</p>
+
+    <h2>13. Zestaw do szycia ran</h2>
+    <p>Zestaw do szycia ran jest bardziej zaawansowanym narzędziem niż zwykłe bandaże, pozwala na trwałe zamknięcie dużych ran, co jest niezbędne w przypadkach poważnych obrażeń. Idealny do długoterminowej stabilizacji pacjenta.</p>
+</div>
+
+<hr>
+
+<footer class="text-muted text-center">
+    <p>&copy; 2024 Projekt Wschód. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.amazonaws.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

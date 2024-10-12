@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leczenie ran - Medycyna Pola Walki</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Główne kolory */
+        :root {
+            --main-yellow: #f9e79f;  /* Pastelowy żółty */
+            --main-yellow-dark: #f7dc6f;
+            --main-bg-color: #fef9e7; /* Jaśniejsze tło */
+            --text-color: #333; /* Ciemny tekst dla lepszej czytelności */
+            --text-color-muted: #666; /* Dodatkowy tekst muted */
+            --primary-btn-color: #f9e79f; /* Żółty kolor dla przycisków */
+            --primary-btn-hover: #f7dc6f; /* Ciemniejszy żółty przy hoverze */
+            --secondary-btn-color: #333; /* Ciemny przycisk pomocniczy */
+            --secondary-btn-hover: #555;
+            --footer-bg-color: #f7dc6f; /* Tło stopki */
+        }
+
+        /* Nawigacja */
+        .navbar {
+            background-color: var(--main-yellow) !important;
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .nav-link {
+            color: var(--text-color) !important;  /* Ciemny tekst */
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: var(--text-color-muted) !important;  /* Lżejszy odcień na hover */
+        }
+
+        /* Główna treść */
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        p, li {
+            color: var(--text-color-muted);
+        }
+
+     
+
+        footer p {
+            margin: 0;
+        }
+
+
+        .btn-primary {
+            background-color: #f9e79f;  /* Pastelowy żółty */
+            border-color: #f9e79f;
+            color: #333;  /* Ciemny tekst */
+        }
+
+        .btn-primary:hover {
+            background-color: #f7dc6f;  /* Ciemniejszy żółty przy hoverze */
+            border-color: #f7dc6f;
+            color: #000;  /* Ciemniejszy tekst na hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Medycyna Pola Walki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="podstawowe-zasady.html">Podstawowe zasady</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="triage.html">Ocena pacjenta</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="leczenie-ran.html">Leczenie ran</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaawansowane-techniki.html">Zaawansowane techniki</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sprzet-medyczny.html">Sprzęt medyczny</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="o-nas.html">O nas</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="mb-4">Leczenie ran</h1>
+    <p>Na polu walki możesz spotkać się z różnymi rodzajami ran i obrażeń, które wymagają specyficznego leczenia:</p>
+    <ul>
+        <li><strong>Abrasions (otarcia)</strong> – lekkie rany, często spowodowane upadkami. Leczenie ich jest stosunkowo proste i wymaga podstawowych bandaży.</li>
+        <li><strong>Avulsions (rozszarpania)</strong> – poważniejsze rany, które mogą wystąpić w wyniku eksplozji lub postrzałów. Wymagają szybkiego tamowania krwotoków.</li>
+        <li><strong>Crush wounds (zgniecenia)</strong> – wynikające z upadków lub zderzeń z pojazdami, prowadzą do poważnych uszkodzeń wewnętrznych.</li>
+        <li><strong>Puncture wounds (rany kłute)</strong> – głębokie, ale wąskie rany, często spowodowane odłamkami.</li>
+    </ul>
+    <p>Każdy rodzaj rany charakteryzuje się różnym poziomem bólu i krwawienia. Właściwy dobór bandaży i leków jest kluczowy dla uratowania pacjenta.</p>
+
+    <h2>Bandaże i tamowanie krwotoków</h2>
+    <p>Leczenie ran wymaga zastosowania odpowiednich bandaży. Każdy bandaż ma inne właściwości:</p>
+    <ul>
+        <li><strong>Bandaż elastyczny</strong> – najlepszy do szybkiego zamknięcia ran, ale ma wysoką szansę na ponowne otwarcie.</li>
+        <li><strong>Bandaż QuickClot</strong> – stosowany do ran, które wymagają szybkiego tamowania krwawienia, ale nie nadaje się do długotrwałego leczenia.</li>
+        <li><strong>Bandaż jałowy</strong> – podstawowy bandaż, który nie jest zbyt skuteczny, ale może być używany, gdy nie ma innych opcji.</li>
+    </ul>
+    <p>Monitorowanie ran i zmienianie bandaży w razie potrzeby jest niezbędne, aby zapobiec ponownemu otwarciu się rany.</p>
+    <a href="zaawansowane-techniki.html" class="btn btn-primary mt-4">Zaawansowane techniki &raquo;</a>
+</div>
+
+<hr>
+
+<footer class="text-muted text-center">
+    <p>&copy; 2024 Projekt Wschód. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

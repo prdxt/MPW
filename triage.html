@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triage - Medycyna Pola Walki</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Główne kolory */
+        :root {
+            --main-yellow: #f9e79f;  /* Pastelowy żółty */
+            --main-yellow-dark: #f7dc6f;
+            --main-bg-color: #fef9e7; /* Jaśniejsze tło */
+            --text-color: #333; /* Ciemny tekst dla lepszej czytelności */
+            --text-color-muted: #666; /* Dodatkowy tekst muted */
+            --primary-btn-color: #f9e79f; /* Żółty kolor dla przycisków */
+            --primary-btn-hover: #f7dc6f; /* Ciemniejszy żółty przy hoverze */
+            --secondary-btn-color: #333; /* Ciemny przycisk pomocniczy */
+            --secondary-btn-hover: #555;
+            --footer-bg-color: #f7dc6f; /* Tło stopki */
+        }
+
+        /* Nawigacja */
+        .navbar {
+            background-color: var(--main-yellow) !important;
+        }
+
+        .navbar-dark .navbar-brand,
+        .navbar-dark .nav-link {
+            color: var(--text-color) !important;  /* Ciemny tekst */
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: var(--text-color-muted) !important;  /* Lżejszy odcień na hover */
+        }
+
+        /* Główna treść */
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+        }
+
+        h1, h2 {
+            color: var(--text-color);
+        }
+
+        p, li {
+            color: var(--text-color-muted);
+        }
+
+        /* Przyciski */
+        .btn-primary {
+            background-color: var(--primary-btn-color);
+            border-color: var(--primary-btn-color);
+            color: var(--text-color);  /* Ciemny tekst */
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-btn-hover);
+            border-color: var(--primary-btn-hover);
+            color: var(--text-color);  /* Tekst pozostaje ciemny na hover */
+        }
+
+        /* Stopka */
+    
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Medycyna Pola Walki</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Strona Główna</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="podstawowe-zasady.html">Podstawowe zasady</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="triage.html">Ocena pacjenta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="leczenie-ran.html">Leczenie ran</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zaawansowane-techniki.html">Zaawansowane techniki</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sprzet-medyczny.html">Sprzęt medyczny</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="o-nas.html">O nas</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <h1 class="mb-4">Ocena pacjenta na polu walki</h1>
+
+    <h2>Zasady oceny pacjenta</h2>
+    <p>
+        Ocena pacjenta w warunkach bojowych musi być przeprowadzona szybko i skutecznie, aby zapewnić odpowiednią pomoc medyczną, nawet w trudnych i niebezpiecznych warunkach. Podstawowe zasady oceny pacjenta na polu walki bazują na priorytetach ratowania życia, stabilizacji stanu zdrowia oraz przygotowania do ewakuacji. Ważne jest stosowanie jasnych protokołów, takich jak <strong>M.A.R.C.H.</strong>, który pomaga uporządkować działania ratownicze.
+    </p>
+
+    <h2>Triage - Segregacja pacjentów</h2>
+    <p>
+        Triage to proces szybkiej oceny stanu zdrowia rannych na polu walki, mający na celu priorytetyzację udzielania pomocy. Segregacja pacjentów polega na podziale ich na kategorie w zależności od stopnia obrażeń oraz potrzeby natychmiastowej interwencji medycznej.
+    </p>
+    
+    <h2>1. Kategoria zielona</h2>
+    <p>Ranni, którzy mogą poruszać się samodzielnie i nie potrzebują natychmiastowej pomocy.</p>
+    
+    <h2>2. Kategoria żółta</h2>
+    <p>Ranni, którzy potrzebują pomocy, ale ich stan jest stabilny. Można ich leczyć w drugiej kolejności.</p>
+    
+    <h2>3. Kategoria czerwona</h2>
+    <p>Pacjenci, którzy są w stanie krytycznym i potrzebują natychmiastowej pomocy medycznej.</p>
+    
+    <h2>4. Kategoria czarna</h2>
+    <p>Pacjenci, którzy nie mają szans na przeżycie lub już zmarli. Należy unikać angażowania zasobów w ich leczenie.</p>
+
+    <p>
+        Triage pozwala maksymalnie wykorzystać ograniczone zasoby medyczne w warunkach bojowych, koncentrując wysiłki na tych, którzy mają największe szanse na przeżycie.
+    </p>
+
+    <h2>Zasady oceny pacjenta:</h2>
+    <ul>
+        <li><strong>Bezpieczeństwo ratownika i pacjenta:</strong> Zanim przystąpisz do oceny stanu pacjenta, upewnij się, że zarówno Ty, jak i ranny jesteście w bezpiecznym miejscu. Jeśli znajdujecie się pod ostrzałem, przenieś rannego do osłoniętej strefy.</li>
+        <li><strong>Szybkie i priorytetowe działanie:</strong> W warunkach bojowych liczy się każda sekunda, dlatego stosowanie jasnych i efektywnych protokołów oceny stanu zdrowia, takich jak <strong>M.A.R.C.H.</strong>, pomaga skupić się na najważniejszych czynnościach, które mogą uratować życie.</li>
+        <li><strong>Komunikacja z rannym:</strong> Jeśli pacjent jest przytomny, staraj się utrzymywać kontakt werbalny. To nie tylko pomoże ocenić jego stan świadomości, ale także może zmniejszyć stres pacjenta i pozwoli Ci lepiej ocenić jego potrzeby.</li>
+        <li><strong>Ocena stanu w oparciu o protokół M.A.R.C.H.:</strong>
+            <ul>
+                <li><strong>M - Massive Hemorrhage (Tamowanie masywnych krwotoków):</strong> Sprawdź, czy pacjent nie ma silnych krwotoków, które wymagają natychmiastowego zatrzymania. Używaj opasek uciskowych (CAT) lub opatrunków uciskowych.</li>
+                <li><strong>A - Airway (Drożność dróg oddechowych):</strong> Oceń, czy pacjent może samodzielnie oddychać. Jeśli ma problemy z oddychaniem, zastosuj techniki udrożnienia dróg oddechowych, takie jak rurka nosowo-gardłowa.</li>
+                <li><strong>R - Respiration (Oddychanie):</strong> Sprawdź, czy pacjent oddycha swobodnie i czy nie ma urazów klatki piersiowej, które mogłyby wpływać na oddychanie. Jeśli są rany penetrujące, zastosuj opatrunek okluzyjny.</li>
+                <li><strong>C - Circulation (Krążenie):</strong> Oceń stan krążenia pacjenta. Sprawdź, czy pacjent nie wykazuje objawów wstrząsu (zimna skóra, przyspieszone tętno). W razie potrzeby zabezpiecz pacjenta przed dalszym wykrwawieniem i zadbaj o odpowiednią pozycję ciała.</li>
+                <li><strong>H - Hypothermia (Hipotermia):</strong> Nawet w ciepłym klimacie pacjent może być narażony na wychłodzenie, zwłaszcza w wyniku urazu. Okryj pacjenta kocem termicznym (folią NRC) lub innym materiałem, aby zapobiec hipotermii.</li>
+            </ul>
+        </li>
+        <li><strong>Kontrola dodatkowych obrażeń:</strong> Po zabezpieczeniu głównych zagrożeń życia przejdź do oceny mniej oczywistych urazów, takich jak złamania, oparzenia, rany odłamkowe i inne obrażenia.</li>
+        <li><strong>Priorytetowa ewakuacja:</strong> Po wstępnej stabilizacji pacjenta przygotuj go do ewakuacji. Jeśli jest to możliwe, wezwij wsparcie medyczne lub zorganizuj transport do punktu medycznego.</li>
+    </ul>
+
+    <h2>Podstawowe pojęcia:</h2>
+    <ul>
+        <li><strong>Tamowanie krwotoków:</strong> Zatrzymanie krwotoku to absolutny priorytet. Opaski uciskowe (stazy) oraz opatrunki uciskowe są podstawowymi narzędziami stosowanymi w takich przypadkach.</li>
+        <li><strong>Udrożnienie dróg oddechowych:</strong> U pacjentów nieprzytomnych lub mających problemy z oddychaniem, kluczowe jest szybkie udrożnienie dróg oddechowych.</li>
+        <li><strong>Wstrząs:</strong> Stan zagrożenia życia wynikający z niedostatecznego krążenia krwi i tlenu w organizmie. Wymaga szybkiej interwencji.</li>
+        <li><strong>Hipotermia:</strong> Groźna sytuacja, w której temperatura ciała pacjenta spada zbyt nisko. Nawet w ciepłych warunkach pole walki może prowadzić do hipotermii.</li>
+    </ul>
+    <a href="leczenie-ran.html" class="btn btn-primary mt-4">Leczenie ran &raquo;</a>
+</div>
+
+<hr>
+
+<footer class="text-muted text-center">
+    <p>&copy; 2024 Projekt Wschód. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
